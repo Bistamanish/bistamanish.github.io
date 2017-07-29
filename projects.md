@@ -4,7 +4,7 @@ title:              Projects
 description:        My Open-Source Contributions
 meta:
   description:      My Open-Source Contributions
-tags:               Ruby,HTML,JS,RSpec,Projects
+tags:              
 
 top_banner_image:   url("http://www.hccs.edu/media/06132016_Computer_Programming_banner.jpg")
 banner_color:       '#666'
