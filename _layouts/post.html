@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="post-content">
+    {% include min_of_read.html post=page %}
+    
+    {{ content }}
+  </div>
+  <div class="tags">
+    <hr>
+    <h2>Tags</h2>
+    {% assign tags = page.tags | join: ' ' | replace: '["', '' | replace: '"]', '' | split: ',' %}
+    {% for tag in tags %}
+      <span class="tag primary">{{ tag }}</span>&nbsp;
+    {% endfor %}
+  </div>
+</article>
+

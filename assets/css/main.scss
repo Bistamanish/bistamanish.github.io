@@ -1,0 +1,96 @@
+---
+---
+
+@import "override.css";
+@import "quote.css";
+
+.round{
+  border-radius: 50%;
+  border: 5px solid #abc;
+}
+.profile-pic{
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon{
+  width: 50px;
+}
+
+.tag{
+      background-color: #636c72;
+      display: inline-block;
+      padding: .4em .4em;
+      margin: 4px 0px;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: .25rem;
+  
+  &.primary{
+    background-color: #337ab7;
+  }
+  
+  &.success{
+    background-color: #5cb85c;
+  }
+}
+.post-list{
+  list-style: none;
+}
+
+.social-icons{
+  a {
+    display: inline-block;
+    margin-top: 5px;
+  }
+}
+
+.so.color{
+  color: #f48024;
+}
+
+.github.color {
+  color: #24292e;
+}
+
+.twitter.color{
+  color: #1da1f2;
+}
+
+.youtube.color{
+  color: #e62117;
+}
+
+.linkedin.color{
+  color: #0077B5;
+}
+
+.orange{
+  color: #e25a0b;
+  border-color: #e25a0b;
+  
+   &:hover{
+      color: #e20b0b;
+      border-color: #e20b0b;
+  }
+}
+
+img.align-center{
+  display: block;
+  margin: auto;
+}
+
+.width100{width: 100%;}
+.with-bg-banner-image{
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+.yellow{
+  color: yellow;
+}

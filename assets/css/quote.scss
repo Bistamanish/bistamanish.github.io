@@ -1,0 +1,66 @@
+---
+---
+
+.quotes{
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  display: block;
+  margin: 20px 0 !important;
+  padding: 40px 10px 10px 60px !important;
+  min-height: 60px;
+}
+  
+blockquote{
+  
+  &.note{
+    @extend .quotes;
+    
+    &:before{
+      background: url(/assets/images/note_icon.png);
+      background-size: 40px 40px;
+    }
+    background: #fff9d8 no-repeat left top;
+    padding: 0 1rem;
+    margin-left: 0;
+    color: #819198;
+    border-left: 4px solid #f4b400 !important;
+    display: inline-block;
+  }
+  
+  &.think{
+    @extend .quotes;
+    
+    &:before{
+      background: url(/assets/images/tips_icon.png);
+      background-size: 40px 40px;
+    }
+    background: #e6fee7;
+    padding: 0 1rem;
+    margin-left: 0;
+    color: #819198;
+    border-left: 4px solid #4CAF50 !important;
+    display: inline-block;
+  }
+  
+  &.tip{
+    @extend .quotes;
+    
+    &:before{
+      background: url(/assets/images/tips_icon.png);
+      background-size: 40px 40px;
+    }
+    background: #f0f0fa;;
+    padding: 0 1rem;
+    margin-left: 0;
+    color: #819198;
+    border-left: 4px solid #c0c0e5 !important;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    {% include metatags.html %}
+    <title>{{ title }}</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css?v='  | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style media="screen">
+    .with-bg-banner-image{
+      {% if page.top_banner_image and page.top_banner_image != false %}
+        background-image:       {{ page.top_banner_image }};
+        background-size:        {{ page.banner_size      | default: 'cover'}};
+        background-blend-mode:  {{ page.banner_mode      | default: 'soft-light'}};
+        background-color:       {{ page.banner_color     | default: '#159957'}};
+        background-position:    {{ page.banner_position  | default: 'center center'}};
+      {% elsif page.top_banner_image == false %}
+        background-image:       none;
+        background-color:       {{ page.banner_color     | default: '#159957'}};
+      {% endif %}
+      
+    }
+  </style>
+</head>
+  
+  <body>
+    <section class="page-header with-bg-banner-image">
+      <a href="/" class="btn"><i class="fa fa-home"></i> Home</a>
+      <a href="/blog" class="btn"><i class="fa fa-book"></i> Blog</a>
+      <a href="/projects" class="btn"><i class="fa fa-code"></i> Projects</a>
+      <a href="/videos" class="btn"><i class="fa fa-play-circle "></i> Videos</a>
+      <a href="/about" class="btn"><i class="fa fa-user"></i> About Me</a>
+      
+      <h1 class="project-name">   {{ page.title       | default: site.title        | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description  | default: site.github.project_tagline }}</h2>
+    </section>
+
+    <section class="main-content">
+      
+      {{ content }}
+      
+      <footer class="site-footer">
+      
+        <div class="social-icons">
+          <hr>
+          {% include social-icons.html %}
+          <hr>
+        </div>
+      
+        {% include facebook.html %}
+      
+      </footer>
+    </section>
+    
+    {% include google-analytics.html %}
+    {% include external_links_handler.html %}
+    {% include share-button.html %}
+  </body>
+</html>

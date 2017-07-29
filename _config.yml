@@ -1,0 +1,75 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+author: Manish Bista
+title:  Manish Bista
+email: bistamanish569@gmail.com
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: 
+preview_image_url: https://scontent.fktm4-1.fna.fbcdn.net/v/t1.0-9/16114523_1298015866958351_7034594090356307393_n.jpg?oh=5e99db01373736f7dbd0b66a9c615499&oe=5A0014D2 
+twitter_username: 
+github_username:  bistamanish
+linkedin_username:  bistamanish
+
+google_analytics: 
+
+youtube:
+  channel_id: 
+  channel_name: 
+  facebook:
+  appId: 479097962453407
+so_uid: 
+so_nickname:
+github:
+  repository_name: bistamanish
+  project_tagline: I love giving back to community
+disqus:
+  shortname: manish
+
+show_downloads: true
+highlighter: rouge
+
+paginate: 10
+paginate_path: /blog/page:num/
+# pagination: 
+#   - paginate:
+#       path:       /blog/page:num/
+#       per_page:   10
+#   - paginate:
+#       path:       /slim/page:num/
+#       per_page:   20
+
+
+markdown: kramdown
+theme: jekyll-theme-cayman
+plugins:
+
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-last-modified-at
+  # - jekyll-sitemap
+  
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
